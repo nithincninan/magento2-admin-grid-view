@@ -1,7 +1,7 @@
 # Admin Grid in Magento2.3
 
-Module: Module_AdminGrid <br />
-Url: admin > module_admingrid/customrule/index
+<b>Module: Module_AdminGrid <br />
+Url: admin > module_admingrid/customrule/index</b>
 
 1. Create index action layout file: view/adminhtml/layout/module_admingrid_customrule_index.xml
 
