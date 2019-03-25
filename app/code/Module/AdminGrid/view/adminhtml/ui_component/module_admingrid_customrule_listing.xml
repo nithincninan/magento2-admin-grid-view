@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+	<argument name="data" xsi:type="array">
+		<item name="js_config" xsi:type="array">
+			<item name="provider" xsi:type="string">module_admingrid_customrule_listing.module_admingrid_customrule_listing_data_source</item>
+		</item>
+	</argument>
+	<settings>
+		<spinner>module_admingrid_customrule_columns</spinner>
+		<deps>
+			<dep>module_admingrid_customrule_listing.module_admingrid_customrule_listing_data_source</dep>
+		</deps>
+	</settings>
+	<dataSource component="Magento_Ui/js/grid/provider" name="module_admingrid_customrule_listing_data_source">
+		<settings>
+			<updateUrl path="mui/index/render"/>
+		</settings>
+		<aclResource>Module_AdminGrid::CustomRule</aclResource>
+		<dataProvider class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider" name="module_admingrid_customrule_listing_data_source">
+			<settings>
+				<requestFieldName>id</requestFieldName>
+				<primaryFieldName>customrule_id</primaryFieldName>
+			</settings>
+		</dataProvider>
+	</dataSource>
+	<listingToolbar name="listing_top">
+		<settings>
+			<sticky>true</sticky>
+		</settings>
+		<bookmark name="bookmarks"/>
+		<columnsControls name="columns_controls"/>
+		<filters name="listing_filters"/>
+		<paging name="listing_paging"/>
+	</listingToolbar>
+	<columns name="module_admingrid_customrule_columns">
+		<selectionsColumn name="ids">
+			<settings>
+				<indexField>customrule_id</indexField>
+			</settings>
+		</selectionsColumn>
+		<column name="customrule_id">
+			<settings>
+				<filter>textRange</filter>
+				<label translate="true">ID</label>
+				<sorting>asc</sorting>
+			</settings>
+		</column>
+		<column name="rule_code">
+			<settings>
+				<filter>text</filter>
+				<label translate="true">rule_code</label>
+			</settings>
+		</column>
+		<column name="from_date" class="Magento\Ui\Component\Listing\Columns\Date" component="Magento_Ui/js/grid/columns/date">
+			<settings>
+				<filter>dateRange</filter>
+				<dataType>date</dataType>
+				<label translate="true">Active from</label>
+			</settings>
+		</column>
+		<column name="to_date" class="Magento\Ui\Component\Listing\Columns\Date" component="Magento_Ui/js/grid/columns/date">
+			<settings>
+				<filter>dateRange</filter>
+				<dataType>date</dataType>
+				<label translate="true">Active To</label>
+			</settings>
+		</column>
+		<column name="status">
+			<settings>
+				<filter>textRange</filter>
+				<label translate="true">status</label>
+			</settings>
+		</column>
+	</columns>
+</listing>

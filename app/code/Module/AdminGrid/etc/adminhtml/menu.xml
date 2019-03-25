@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Module AdminGrid New Admin Menu
+ * @package Module/AdminGrid
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add action="module_admingrid/customrule/index" id="Module_AdminGrid::module_admingrid_customrule" module="Module_AdminGrid" parent="Module::top_level" resource="Module_AdminGrid::CustomRule" sortOrder="22" title="CustomRule"/>
+	</menu>
+</config>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Module AdminGrid for Acl
+ * @package Module/AdminGrid
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+	<router id="admin">
+		<route frontName="module_admingrid" id="module_admingrid">
+			<module before="Magento_Backend" name="Module_AdminGrid"/>
+		</route>
+	</router>
+</config>

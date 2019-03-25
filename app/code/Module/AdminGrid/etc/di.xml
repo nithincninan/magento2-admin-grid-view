@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Module\AdminGrid\Api\CustomRuleRepositoryInterface" type="Module\AdminGrid\Model\CustomRuleRepository"/>
+	<preference for="Module\AdminGrid\Api\Data\CustomRuleInterface" type="Module\AdminGrid\Model\Data\CustomRule"/>
+	<preference for="Module\AdminGrid\Api\Data\CustomRuleSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Module\AdminGrid\Model\ResourceModel\CustomRule\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">module_admingrid_customrule</argument>
+			<argument name="resourceModel" xsi:type="string">Module\AdminGrid\Model\ResourceModel\CustomRule\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="module_admingrid_customrule_listing_data_source" xsi:type="string">Module\AdminGrid\Model\ResourceModel\CustomRule\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+</config>
