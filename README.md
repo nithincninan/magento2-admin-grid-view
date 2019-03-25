@@ -1,2 +1,2 @@
-# admin-grid-view
-Admin Grid in Magento2.3
+# Admin Grid in Magento2.3
+
