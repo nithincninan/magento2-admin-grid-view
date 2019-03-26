@@ -12,15 +12,15 @@ Url: admin > admingrid/customrule/index</b>
 
        2.1) As declared in layout file, we will create a component file admingrid_customrule_listing.xml
        2.2) Here we will declare the grid layout and call data source/data provider.  
-       2.3) Toolbar: <listingToolbar name="listing_top">
+       2.3) Toolbar:  <listingToolbar name="listing_top">
                               <settings>
-                              <sticky>true</sticky>
+                                <sticky>true</sticky>
                               </settings>
                               <bookmark name="bookmarks"/>
                               <columnsControls name="columns_controls"/>
                               <filters name="listing_filters"/>
                               <paging name="listing_paging"/>
-                              </listingToolbar>
+                       </listingToolbar>
        				 1) Paging(add pagination for the grid): Insert <paging name="listing_paging"/> in ListToolbar <listingToolbar name="listing_top">
        				 2) Export Button(export the data of the grid): Insert <exportButton name="export_button"/> in ListToolbar <listingToolbar name="listing_top">
        				 3) Full text search(add a search box at the top of Grid): <filterSearch name="fulltext"/> in ListToolbar
