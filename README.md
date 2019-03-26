@@ -1,16 +1,16 @@
 # Admin Grid in Magento2.3
 
 <b>Module: Module_AdminGrid <br />
-Url: admin > module_admingrid/customrule/index</b>
+Url: admin > admingrid/customrule/index</b>
 
-1. Create index action layout file: view/adminhtml/layout/module_admingrid_customrule_index.xml
+1. Create index action layout file: view/adminhtml/layout/admingrid_customrule_index.xml
 
-     	1.1) For the action, module_admingrid/customrule/index, we will create a layout file name module_admingrid_customrule_index.xml
+     	1.1) For the action, admingrid/customrule/index, we will create a layout file name admingrid_customrule_index.xml
      	1.2) Here we will declare the uiComponent file for the content of grid page. 
   
-2. Create Component layout file(Ui Component xml file): view/adminhtml/ui_component/module_admingrid_customrule_listing.xml
+2. Create Component layout file(Ui Component xml file): view/adminhtml/ui_component/admingrid_customrule_listing.xml
 
-       2.1) As declared in layout file, we will create a component file module_admingrid_customrule_listing.xml
+       2.1) As declared in layout file, we will create a component file admingrid_customrule_listing.xml
        2.2) Toolbar: <listingToolbar name="listing_top">
                        <settings>
                        <sticky>true</sticky>

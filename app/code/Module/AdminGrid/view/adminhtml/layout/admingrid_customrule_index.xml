@@ -9,7 +9,7 @@
 	<update handle="styles"/>
 	<body>
 		<referenceContainer name="content">
-			<uiComponent name="module_admingrid_customrule_listing"/>
+			<uiComponent name="admingrid_customrule_listing"/>
 		</referenceContainer>
 	</body>
 </page>

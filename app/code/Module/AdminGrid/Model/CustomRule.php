@@ -10,7 +10,7 @@ use Module\AdminGrid\Api\Data\CustomRuleInterfaceFactory;
 class CustomRule extends \Magento\Framework\Model\AbstractModel
 {
 
-    protected $_eventPrefix = 'module_admingrid_customrule';
+    protected $_eventPrefix = 'admingrid_customrule';
     protected $dataObjectHelper;
 
     protected $customruleDataFactory;

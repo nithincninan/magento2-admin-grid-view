@@ -13,6 +13,6 @@ class CustomRule extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('module_admingrid_customrule', 'customrule_id');
+        $this->_init('admingrid_customrule', 'customrule_id');
     }
 }

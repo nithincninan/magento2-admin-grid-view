@@ -2,21 +2,21 @@
 <listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
 	<argument name="data" xsi:type="array">
 		<item name="js_config" xsi:type="array">
-			<item name="provider" xsi:type="string">module_admingrid_customrule_listing.module_admingrid_customrule_listing_data_source</item>
+			<item name="provider" xsi:type="string">admingrid_customrule_listing.admingrid_customrule_listing_data_source</item>
 		</item>
 	</argument>
 	<settings>
-		<spinner>module_admingrid_customrule_columns</spinner>
+		<spinner>admingrid_customrule_columns</spinner>
 		<deps>
-			<dep>module_admingrid_customrule_listing.module_admingrid_customrule_listing_data_source</dep>
+			<dep>admingrid_customrule_listing.admingrid_customrule_listing_data_source</dep>
 		</deps>
 	</settings>
-	<dataSource component="Magento_Ui/js/grid/provider" name="module_admingrid_customrule_listing_data_source">
+	<dataSource component="Magento_Ui/js/grid/provider" name="admingrid_customrule_listing_data_source">
 		<settings>
 			<updateUrl path="mui/index/render"/>
 		</settings>
 		<aclResource>Module_AdminGrid::CustomRule</aclResource>
-		<dataProvider class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider" name="module_admingrid_customrule_listing_data_source">
+		<dataProvider class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider" name="admingrid_customrule_listing_data_source">
 			<settings>
 				<requestFieldName>id</requestFieldName>
 				<primaryFieldName>customrule_id</primaryFieldName>
@@ -32,7 +32,7 @@
 		<filters name="listing_filters"/>
 		<paging name="listing_paging"/>
 	</listingToolbar>
-	<columns name="module_admingrid_customrule_columns">
+	<columns name="admingrid_customrule_columns">
 		<selectionsColumn name="ids">
 			<settings>
 				<indexField>customrule_id</indexField>
