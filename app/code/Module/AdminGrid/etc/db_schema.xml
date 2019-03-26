@@ -1,4 +1,10 @@
 <?xml version="1.0" ?>
+<!--
+/**
+ * Module AdminGrid Install/Update Schema Script
+ * @package Module/AdminGrid
+*/
+-->
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
 	<table comment="admingrid_customrule Table" engine="innodb" name="admingrid_customrule" resource="default">
 		<column comment="Entity Id" identity="true" name="customrule_id" nullable="false" padding="6" unsigned="false" xsi:type="smallint"/>

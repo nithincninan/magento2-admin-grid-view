@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Module AdminGrid Model Collection
+ * @package Module/AdminGrid
+ */
+declare(strict_types=1);
 
 namespace Module\AdminGrid\Model\ResourceModel\CustomRule;
 
