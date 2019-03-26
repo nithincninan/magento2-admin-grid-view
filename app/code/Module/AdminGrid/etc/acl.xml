@@ -10,10 +10,6 @@
 		<resources>
 			<resource id="Magento_Backend::admin">
 				<resource id="Module_AdminGrid::CustomRule" sortOrder="10" title="CustomRule">
-					<resource id="Module_AdminGrid::CustomRule_save" sortOrder="10" title="Save CustomRule"/>
-					<resource id="Module_AdminGrid::CustomRule_delete" sortOrder="20" title="Delete CustomRule"/>
-					<resource id="Module_AdminGrid::CustomRule_update" sortOrder="30" title="Update CustomRule"/>
-					<resource id="Module_AdminGrid::CustomRule_view" sortOrder="40" title="View CustomRule"/>
 				</resource>
 			</resource>
 		</resources>
