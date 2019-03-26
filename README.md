@@ -1,4 +1,4 @@
-# Magento2.3 - Admin Grid with Ui Component
+# Magento 2.3 - Admin Grid with Ui Component
 
 <b>Module: Module_AdminGrid <br />
 Url: admin > admingrid/customrule/index</b>
