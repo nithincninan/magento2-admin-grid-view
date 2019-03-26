@@ -1,4 +1,4 @@
-# Admin Grid in Magento2.3
+# Admin Grid with Ui Component - Magento2.3
 
 <b>Module: Module_AdminGrid <br />
 Url: admin > admingrid/customrule/index</b>
@@ -6,7 +6,7 @@ Url: admin > admingrid/customrule/index</b>
 1. Create index action layout file: view/adminhtml/layout/admingrid_customrule_index.xml
 
      	1.1) For the action, admingrid/customrule/index, we will create a layout file name admingrid_customrule_index.xml
-     	1.2) Here we will declare the uiComponent file for the content of grid page. 
+     	1.2) Here we will declare the uiComponent file for the content of grid page.
   
 2. Create Component layout file(Ui Component xml file): view/adminhtml/ui_component/admingrid_customrule_listing.xml
 
@@ -26,6 +26,10 @@ Url: admin > admingrid/customrule/index</b>
 				 4) Column controls(add a columns list box which allow the admin user can choose which columns can be shown up on grid):
 						  <columnsControls name="columns_controls"/>
         2.3) Here we will declare the grid layout and call data source/data provider.        
-                       
 
 3. Create di.xml file: etc/di.xml
+
+       3.1) Declaring Resource model in dependency injection file(di.xml), which will connect to the model and fetch the data to
+         the custom Grid. 
+          Also it will declare the Grid Collection class, table and resource Model for the table.
+ 
