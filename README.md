@@ -1,18 +1,18 @@
-# Admin Grid with Ui Component - Magento2.3
+# Magento2.3 - Admin Grid with Ui Component
 
 <b>Module: Module_AdminGrid <br />
 Url: admin > admingrid/customrule/index</b>
 
-Tree:
-
+Tree
+```
 |-- README.md
-`-- app
-    `-- code
-        `-- Module
-            `-- AdminGrid
+-- app
+    -- code
+        -- Module
+            -- AdminGrid
                 |-- Controller
-                |   `-- Adminhtml
-                |       `-- CustomRule
+                |   -- Adminhtml
+                |       -- CustomRule
                 |           `-- Index.php
                 |-- Model
                 |   |-- CustomRule.php
@@ -37,6 +37,7 @@ Tree:
                             `-- admingrid_customrule_listing.xml
 
 16 directories, 14 files
+```
 
 1. Create index action layout file: view/adminhtml/layout/admingrid_customrule_index.xml
 
