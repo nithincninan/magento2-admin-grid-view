@@ -11,21 +11,21 @@ Url: admin > admingrid/customrule/index</b>
 2. Create Component layout file(Ui Component xml file): view/adminhtml/ui_component/admingrid_customrule_listing.xml
 
        2.1) As declared in layout file, we will create a component file admingrid_customrule_listing.xml
-       2.2) Toolbar: <listingToolbar name="listing_top">
-                       <settings>
-                       <sticky>true</sticky>
-                       </settings>
-                       <bookmark name="bookmarks"/>
-                       <columnsControls name="columns_controls"/>
-                       <filters name="listing_filters"/>
-                       <paging name="listing_paging"/>
-                       </listingToolbar>
-				 1) Paging(add pagination for the grid): Insert <paging name="listing_paging"/> in ListToolbar <listingToolbar name="listing_top">
-				 2) Export Button(export the data of the grid): Insert <exportButton name="export_button"/> in ListToolbar <listingToolbar name="listing_top">
-				 3) Full text search(add a search box at the top of Grid): <filterSearch name="fulltext"/> in ListToolbar
-				 4) Column controls(add a columns list box which allow the admin user can choose which columns can be shown up on grid):
-						  <columnsControls name="columns_controls"/>
-        2.3) Here we will declare the grid layout and call data source/data provider.        
+       2.2) Here we will declare the grid layout and call data source/data provider.  
+       2.3) Toolbar: <listingToolbar name="listing_top">
+                              <settings>
+                              <sticky>true</sticky>
+                              </settings>
+                              <bookmark name="bookmarks"/>
+                              <columnsControls name="columns_controls"/>
+                              <filters name="listing_filters"/>
+                              <paging name="listing_paging"/>
+                              </listingToolbar>
+       				 1) Paging(add pagination for the grid): Insert <paging name="listing_paging"/> in ListToolbar <listingToolbar name="listing_top">
+       				 2) Export Button(export the data of the grid): Insert <exportButton name="export_button"/> in ListToolbar <listingToolbar name="listing_top">
+       				 3) Full text search(add a search box at the top of Grid): <filterSearch name="fulltext"/> in ListToolbar
+       				 4) Column controls(add a columns list box which allow the admin user can choose which columns can be shown up on grid):
+       						  <columnsControls name="columns_controls"/>      
 
 3. Create di.xml file: etc/di.xml
 
