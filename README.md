@@ -29,7 +29,7 @@ Url: admin > admingrid/customrule/index</b>
 
 3. Create di.xml file: etc/di.xml
 
-       3.1) Declaring Resource model in dependency injection file(di.xml), which will connect to the model and fetch the data to
+       3.1) Here we will declaring Resource model, which will connect to the model and fetch the data to
          the custom Grid. 
           Also it will declare the Grid Collection class, table and resource Model for the table.
  
