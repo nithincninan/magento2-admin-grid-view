@@ -3,6 +3,41 @@
 <b>Module: Module_AdminGrid <br />
 Url: admin > admingrid/customrule/index</b>
 
+Tree:
+
+|-- README.md
+`-- app
+    `-- code
+        `-- Module
+            `-- AdminGrid
+                |-- Controller
+                |   `-- Adminhtml
+                |       `-- CustomRule
+                |           `-- Index.php
+                |-- Model
+                |   |-- CustomRule.php
+                |   `-- ResourceModel
+                |       |-- CustomRule
+                |       |   `-- Collection.php
+                |       `-- CustomRule.php
+                |-- etc
+                |   |-- acl.xml
+                |   |-- adminhtml
+                |   |   |-- menu.xml
+                |   |   `-- routes.xml
+                |   |-- db_schema.xml
+                |   |-- di.xml
+                |   `-- module.xml
+                |-- registration.php
+                `-- view
+                    `-- adminhtml
+                        |-- layout
+                        |   `-- admingrid_customrule_index.xml
+                        `-- ui_component
+                            `-- admingrid_customrule_listing.xml
+
+16 directories, 14 files
+
 1. Create index action layout file: view/adminhtml/layout/admingrid_customrule_index.xml
 
      	1.1) For the action, admingrid/customrule/index, we will create a layout file name admingrid_customrule_index.xml
