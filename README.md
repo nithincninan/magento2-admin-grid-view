@@ -69,3 +69,8 @@ Tree
          the custom Grid. 
           Also it will declare the Grid Collection class, table and resource Model for the table.
  
+
+Note: declare(strict_types=1);
+
+        1. Due to PHP7.2 and Magento 2.3 standards we have to use strict mode during development, so that means that for classes you need to add declare(strict_types=1);
+            FAQ: Can we use this code in Production instance >>> Yes, Magento core, uses that mode as well. 
