@@ -3,7 +3,7 @@
 <b>Module: Module_AdminGrid <br />
 Url: admin > admingrid/customrule/index</b>
 
-Tree
+tree /F
 ```
 |-- README.md
 -- app
